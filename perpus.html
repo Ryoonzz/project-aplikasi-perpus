@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Peminjaman Buku</title>
+    <link rel="stylesheet" href="perpus.css">
+</head>
+<body>
+    <div class="box">
+        <h1>Aplikasi Peminjaman Buku</h1>
+        <form id="formPeminjaman">
+            <label for="nama">Nama peminjam:</label>
+            <input type="text" id="nama" placeholder="Masukkan nama peminjam..." required><br><br>
+
+            <label for="namabuku">Judul buku yang dipinjam:</label>
+            <input type="text" id="namabuku" placeholder="Masukkan judul buku yang dipinjam..." required><br><br>
+
+            <div class="tanggal">
+            <label for="tanggalpinjam">Tanggal peminjaman:</label>
+            <input type="date" id="tanggalpinjam" required><br><br>
+
+            <label for="tanggalbalik">Tanggal pengembalian:</label>
+            <input type="date" id="tanggalbalik"><br><br>
+            </div>
+
+            <label for="keterangan">Keterangan:</label>
+            <select name="Keterangan" id="keterangan">
+                <option>Belum dikembalikan</option>
+                <option>Sudah dikembalikan</option>
+            </select><br><br>
+
+            <input type="submit" value="Tambah" class="tmblTambah">
+        </form>
+
+        <table id="tablePeminjaman">
+            <tr>
+                <th>Nama Peminjam</th>
+                <th>Judul Buku Yang Dipinjam</th>
+                <th>Tanggal Peminjaman</th>
+                <th>Tanggal Pengembalian</th>
+                <th>Keterangan</th>
+                <th>Action</th>
+            </tr>
+        </table>
+    </div>
+
+<script src="perpus.js"></script>
+</body>
+</html>

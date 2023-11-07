@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); /* Font Lobster */
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap'); /* Font young serif */
+
+html {
+    font-family: "Young serif";
+    background: url(Wallpaper2.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.box {
+    background-color: rgba(242, 242, 242, 0.5);
+    max-width: 1000px;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: "Lobster";
+    font-size: 50px;
+    text-align: center;
+    margin-top: 0;
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+#nama {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+#namabuku {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.tanggal {
+    display: flex;
+}
+#tanggalpinjam {
+    width: 45%;
+    padding: 12px 20px;
+    margin: 8px 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+#tanggalbalik {
+    width: 45%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+#keterangan {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.tmblTambah {
+    background-color: rgb(255,107,151);
+    color: white;
+    padding: 14px 15px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+.tmblTambah:hover {
+    background-color: rgb(189,72,130);
+}
+
+.tmblEdit {
+    background-color: #f0ad4e;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.tmblEdit:hover {
+    background-color: #f1b55f;
+}
+
+.tmblHapus {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.tmblHapus:hover {
+    background-color: #f5554a;
+}
+
+#tablePeminjaman {
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+#tablePeminjaman td, #tablePeminjaman th {
+    border: 1px solid rgb(221,221,221);
+    padding: 10px;
+}
+
+#tablePeminjaman th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: rgb(128,54,107);
+    color: white;
+}
