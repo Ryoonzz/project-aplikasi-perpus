@@ -3,13 +3,14 @@
 
 html {
     font-family: "Young serif";
-    background: url(Wallpaper2.gif);
+    background: url(wallpaper.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 .box {
-    background-color: rgba(242, 242, 242, 0.5);
+    border-radius: 5px;
+    background-color: rgba(242, 242, 242, 0.8);
     max-width: 1000px;
     padding: 20px;
     margin: 10px auto;
@@ -64,6 +65,15 @@ h1 {
     border-radius: 10px;
     box-sizing: border-box;
 }
+#petugas {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
 #keterangan {
     width: 100%;
     padding: 12px 20px;
@@ -75,7 +85,7 @@ h1 {
 }
 
 .tmblTambah {
-    background-color: rgb(255,107,151);
+    background-color: #f0ad4e;
     color: white;
     padding: 14px 15px;
     margin: 5px 0;
@@ -83,22 +93,24 @@ h1 {
     border-radius: 5px;
     cursor: pointer;
     width: 100%;
+    font-family: "young serif";
 }
 .tmblTambah:hover {
-    background-color: rgb(189,72,130);
+    background-color: #c68e40;
 }
 
 .tmblEdit {
-    background-color: #f0ad4e;
+    background-color: rgb(34, 96, 203);
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    font-family: "young serif";
 }
 .tmblEdit:hover {
-    background-color: #f1b55f;
+    background-color: rgb(33, 45, 113);
 }
 
 .tmblHapus {
@@ -109,9 +121,10 @@ h1 {
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    font-family: "young serif";
 }
 .tmblHapus:hover {
-    background-color: #f5554a;
+    background-color: #8b2a23;
 }
 
 #tablePeminjaman {
@@ -128,6 +141,10 @@ h1 {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: center;
-    background-color: rgb(128,54,107);
+    background-color: rgb(209,70,51);
     color: white;
+}
+
+#tablePeminjaman td {
+    background-color: rgba(240, 248, 255, 0.8);
 }

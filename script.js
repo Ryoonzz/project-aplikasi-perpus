@@ -30,6 +30,15 @@ function editPeminjaman(index) {
     document.getElementById("tanggalpinjam").value = pinjamanItem.tanggalpinjam;
     document.getElementById("tanggalbalik").value = pinjamanItem.tanggalbalik;
     document.getElementById("keterangan").value = pinjamanItem.keterangan;
+    const nama = document.getElementById('nama')
+    nama.removeAttribute('requiered')
+    nama.setAttribute('readonly','readonly')
+    const namabuku = document.getElementById('namabuku')
+    namabuku.removeAttribute('requiered')
+    namabuku.setAttribute('readonly','readonly')
+    const tanggalpinjam = document.getElementById('tanggalpinjam')
+    tanggalpinjam.removeAttribute('requiered')
+    tanggalpinjam.setAttribute('readonly','readonly')
     peminjaman.splice(index, 1); // Hapus data peminjaman yang akan diubah
     localStorage.setItem("peminjaman", JSON.stringify(peminjaman));
     munculTable();
@@ -57,6 +66,7 @@ e.preventDefault();
     document.getElementById("tanggalbalik").value = "";
     document.getElementById("keterangan").value = "";
 munculTable();
+location.reload()
 });
 
 munculTable();
